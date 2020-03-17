@@ -29,4 +29,6 @@ class custom(Topo):
         self.addLink(h5, switch2)
         self.addLink(h6, switch2)
 
+        self.addLink(switch1, switch2)
+
 topos = {'custom': (lambda: custom())}
